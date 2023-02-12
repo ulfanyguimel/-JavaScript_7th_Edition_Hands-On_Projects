@@ -1,6 +1,6 @@
 /*  JavaScript 6th Edition
     Chapter 1
-    Hands-on Project 1-5
+    Hands-on Project 1-1
 
     Filename: styles.css
 */
@@ -42,19 +42,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   max-width: 640px;
+   max-width: 960px;
    background: white;
    margin: 0 auto;
-   font-family: Arial, Helvetica, sans-serif; 
-   -webkit-box-shadow: 10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   -moz-box-shadow:    10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   box-shadow:         10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
+   font-family: Verdana, Geneva, sans-serif; 
 }
 
 ol, ul {
@@ -63,26 +54,38 @@ ol, ul {
 
 /* page header */
 header {
-   background: #329D27;
+   background: #330570;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
-   border-bottom: 1px solid black;
+   -webkit-border-top-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-radius-topright: 20px;
+   -moz-border-radius-topleft: 20px;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
 }
 
 /* main content */
 article {
-   width: 640px;
-   text-align: center;
-   background: ivory;
-   padding: 20px;
+   width: 960px;
+   text-align: left;
+   background: #FFCF40;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-radius-bottomright: 20px;
+   border-bottom-right-radius: 20px;
 }
 
-h2 {
+article h2 {
    font-weight: bold;
-   font-size: 30px;
-   text-align: center;
+   font-size: 24px;
+   padding: 10px;
 }
 
+article ol li {
+   padding: 10px;
+   margin-left: 35px;
+   list-style-type: decimal;
+}
